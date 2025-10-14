@@ -15,6 +15,4 @@ Un tucán estilo ilustración infantil, dibujado **solo con HTML y CSS**, sin im
   - La luna brilla más
 
 ## 🚀 Deploy en GitHub Pages
-[Puedes verlo en vivo aquí](https://TU-USUARIO.github.io/tucan-boliviano-css)
-
-## 📁 Estructura
+[Puedes verlo en vivo aquí](https://github.com/anelquiroz-art/Bosque-Nocturno.git)
