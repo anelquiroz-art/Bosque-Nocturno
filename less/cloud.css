@@ -1,0 +1,12 @@
+.cloud--float {
+  animation: floatCloud 12s infinite ease-in-out;
+}
+@keyframes floatCloud {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+}

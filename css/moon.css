@@ -1,0 +1,22 @@
+.sky {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, #000428, #004e92);
+}
+
+.moon {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 60px;
+  height: 60px;
+  background: #f0f0f0;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.moon--glow:hover {
+  box-shadow: 0 0 50px #fff, 0 0 80px #fff;
+}

@@ -1,0 +1,79 @@
+.star {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 4s infinite ease-in-out;
+}
+.star--1 {
+  top: 15%;
+  left: 20%;
+  animation-delay: 0s;
+}
+.star--2 {
+  top: 25%;
+  left: 40%;
+  animation-delay: 0.5s;
+}
+.star--3 {
+  top: 20%;
+  left: 60%;
+  animation-delay: 1s;
+}
+.star--4 {
+  top: 35%;
+  left: 80%;
+  animation-delay: 1.5s;
+}
+.star--5 {
+  top: 40%;
+  left: 25%;
+  animation-delay: 2s;
+}
+.star--6 {
+  top: 50%;
+  left: 45%;
+  animation-delay: 2.5s;
+}
+.star--7 {
+  top: 55%;
+  left: 70%;
+  animation-delay: 3s;
+}
+.star--8 {
+  top: 60%;
+  left: 10%;
+  animation-delay: 3.5s;
+}
+.star--9 {
+  top: 70%;
+  left: 30%;
+  animation-delay: 0.3s;
+}
+.star--10 {
+  top: 75%;
+  left: 55%;
+  animation-delay: 0.8s;
+}
+.star--11 {
+  top: 80%;
+  left: 75%;
+  animation-delay: 1.3s;
+}
+.star--12 {
+  top: 85%;
+  left: 15%;
+  animation-delay: 1.8s;
+}
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}

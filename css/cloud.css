@@ -1,0 +1,33 @@
+.cloud--float {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  animation-name: cloud--movement;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.cloud--1 {
+  top: 50px;
+  animation-duration: 60s;
+}
+
+.cloud--2 {
+  top: 100px;
+  animation-duration: 200s;
+}
+
+.cloud--3 {
+  top: 20px;
+  animation-duration: 120s;
+}
+
+@keyframes cloud--movement {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}

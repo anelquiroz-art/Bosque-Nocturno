@@ -1,0 +1,45 @@
+
+.tree {
+  position: absolute;
+  bottom: 0;
+  width: 90px;               
+  height: 260px;             
+  filter: drop-shadow(0 6px 4px rgba(0, 0, 0, .25)); 
+}
+
+
+.tree__up {
+  width: 100%;
+  height: 160px;
+  background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+
+.tree__mid {
+  width: 85%;
+  height: 60px;
+  margin: -20px auto 0;      
+  background: linear-gradient(135deg, #388e3c 0%, #66bb6a 100%);
+  clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
+}
+
+*/
+.tree__trunk {
+  width: 28px;
+  height: 80px;
+  margin: -10px auto 0;
+  background: linear-gradient(to right, #5d4037, #795548);
+  border-radius: 0 0 6px 6px;
+}
+
+
+.tree--left   { left: 5%; }
+.tree--mid    { left: 50%; transform: translateX(-50%); }
+.tree--right  { right: 5%; }
+
+.tree:hover .tree__up,
+.tree:hover .tree__mid {
+  filter: brightness(1.15);
+  transition: filter .3s ease;
+}

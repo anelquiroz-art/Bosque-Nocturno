@@ -1,0 +1,96 @@
+.tucan {
+  position: absolute;
+  bottom: 30%;
+  left: 15%;
+  width: 140px;
+  height: 200px;
+  animation: floatTucan 4s infinite ease-in-out;
+}
+
+.tucan__head {
+  width: 100px;
+  height: 100px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+.tucan__beak {
+  width: 70px;
+  height: 35px;
+  background: linear-gradient(to right, #ff6600, #ffcc00);
+  position: absolute;
+  top: 35px;
+  left: -40px;
+  clip-path: polygon(0 50%, 100% 0, 100% 100%);
+}
+
+.tucan__eye {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 35px;
+  left: 40px;
+  border: 3px solid #000;
+  animation: blink 3s infinite;
+}
+
+@keyframes blink {
+  0%, 90%, 100% { transform: scaleY(1); }
+  95% { transform: scaleY(0.1); }
+}
+
+.tucan__body {
+  width: 90px;
+  height: 100px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 80px;
+  left: 25px;
+}
+
+.tucan__wing {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 60px solid #000;
+  position: absolute;
+  top: 100px;
+}
+
+.tucan__wing--left {
+  left: -10px;
+  transform: rotate(-20deg);
+}
+
+.tucan__wing--right {
+  right: -10px;
+  transform: rotate(20deg);
+}
+
+.tucan__tail {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 40px solid #000;
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tucan:hover {
+  transform: rotate(-3deg) scale(1.05);
+}
+
+@keyframes floatTucan {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}

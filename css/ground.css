@@ -1,0 +1,61 @@
+/* ----------  Suelo más bajo  ---------- */
+.ground {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 8vh;               /* bajamos la tierra */
+  overflow: visible;          /* mostramos todo */
+}
+
+.ground__soil {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #3e2723 0%, #5d4037 60%, #795548 100%);
+  box-shadow: inset 0 20px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* ----------  Árboles completos  ---------- */
+.ground .tree {
+  position: absolute;
+  bottom: 0;
+  height: 260px;              /* altura total del árbol */
+  width: 100px;               /* espacio que ocupa */
+  overflow: visible;          /* sin cortes */
+}
+
+.ground .tree--left   { left: 8%; }
+.ground .tree--mid    { left: 50%; transform: translateX(-50%); }
+.ground .tree--right  { right: 8%; }
+
+/* ----------  Partes del árbol  ---------- */
+.tree__up {
+  width: 100px;
+  height: 160px;
+  background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.tree__mid {
+  width: 85px;
+  height: 60px;
+  margin: -20px auto 0;
+  background: linear-gradient(135deg, #388e3c 0%, #66bb6a 100%);
+  clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
+}
+
+.tree__trunk {
+  width: 28px;
+  height: 80px;
+  margin: -10px auto 0;
+  background: linear-gradient(to right, #4e342e, #6d4c41);
+  border-radius: 0 0 6px 6px;
+}
+
+/* ----------  Hover brillante  ---------- */
+.tree:hover .tree__up,
+.tree:hover .tree__mid {
+  filter: brightness(1.15);
+  transition: filter 0.3s ease;
+}
